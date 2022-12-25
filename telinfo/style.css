@@ -1,0 +1,282 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: Monospace;
+  box-sizing: border-box;
+}
+body{
+  width: 100%;
+  min-height: 100vh;
+  background-color: #ffffff;
+}
+.containear{
+  width: 100%;
+  min-height: 100vh;
+  padding-left: 3%;
+  padding-right: 3%;
+  box-sizing: border-box;
+  font-family: Sans-Serif;
+  overflow: hidden;
+}
+.navbar{
+width: 100%;
+display: flex;
+align-items: center;
+}
+.menuLogo{
+  width: 25px;
+  cursor: pointer;
+  display: none;
+}
+nav{
+  flex: 1;
+  text-align: right;
+}
+nav ul li{
+  list-style: none;
+  display: inline-block;
+  margin-right: 30px;
+}
+nav ul li a{
+  text-decoration: none;
+  color: #000;
+  font-size: 14px;
+  outline: none;
+  cursor: pointer;
+  font-family: Sans-Serif;
+}
+nav ul li a:hover{
+  color: #ff5ea2;
+  outline: none;
+  cursor: pointer;
+}
+.row {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 40px 0;
+  font-family: Monospace;
+}
+.inputBox{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #fff;
+  border: 1.5px solid #ff6300;
+  border-radius: 9px;
+  padding-right: 5%;
+  padding-left: 5%;
+  padding: 20px;
+}
+.inputBox h2 {
+  font-family: Monospace;
+  font-size: 30px;
+  font-weight: bold;
+  padding-bottom: 20px;
+  
+}
+.inputBox h2 .teText{
+  color: #00ccff;
+  font-size: 30px;
+}
+.inputBox input {
+  width: 100%;
+  padding: 10px;
+  background-color: transparent;
+  border: 1px solid #00ccff;
+  border-radius: 5px;
+  outline: none;
+  color: #00ccff;
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+.inputBox button{
+  width: 100%;
+  padding: 9px;
+  background-color: #ff6300;
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+  outline: none;
+  color: #fff;
+  transition: 0.6s;
+  margin-bottom: 10px;
+}
+.inputBox button:hover{
+  background-color: #e05700;
+  transition: 0.6s;
+}
+.row #err{
+  padding: 9px;
+  width: 100%;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 20px;
+  display: none;
+  transition: 0.6s;
+}
+.col-2{
+  width: 100%;
+  border: 1.5px solid #ff6300;
+  border-radius: 9px;
+  padding: 20px;
+  margin: 10px;
+  outline: none;
+  overflow: hidden;
+  padding-left: 6%;
+  padding-right: 6%;
+  font-family: Monospace;
+  display: none;
+}
+.col-2 div{
+  width: 100%;
+  border: 0.7px solid #ff3527;
+  background-color: #ff6300;
+  margin-bottom: 10px;
+  margin: 10px 0;
+}
+.col-2 ul{
+  margin-left: 10px;
+  margin-right: 10px;
+  
+}
+.col-2 b{
+  font-size: 20px;
+}
+.col-2 ul li{
+  font-family: Monospace;
+  font-size: 17px;
+}
+.sendMessage{
+  width: 100%;
+  border: 1.5px solid #ff6300;
+  border-radius: 9px;
+  padding: 20px;
+  margin: 10px;
+  outline: none;
+  overflow: hidden;
+  padding-left: 6%;
+  padding-right: 6%;
+  font-family: Monospace;
+  transition: 0.6s;
+  display: flex;
+  flex-direction: column;
+  display: none;
+}
+.sendMessage h2{
+  margin-bottom: 10px;
+}
+.sendMessage input{
+   width: 60%;
+   padding: 5px;
+   border: 1px solid #ff6300;
+   border-radius: 6px;
+   font-size: 20px;
+   font-weight: bold;
+   margin-bottom: 10px;
+   outline: none;
+}
+.sendMessage textarea{
+  width: 100%;
+  border: 1px solid #ff6300;
+  border-radius: 6px;
+  padding: 6px;
+  font-size: 17px;
+  outline: none;
+  margin-bottom: 10px;
+}
+.sendMessage button{
+  width: 60%;
+  padding: 6px;
+  border: none;
+  background-color: #ff6300;
+  font-size: 17px;
+  border-radius: 6px;
+  color: #fff;
+  margin-bottom: 10px;
+}
+.sendMessage span{
+  width: 60%;
+  padding: 6px;
+  border: none;
+  border-radius: 6px;
+  background-color: #00bd1a;
+  color: #fff;
+  font-size: 17px;
+  margin-bottom: 10px;
+  display: none;
+}
+.col-json {
+  width: 100%;
+  border: 1.5px solid #ff6300;
+  border-radius: 9px;
+  padding: 20px;
+  margin: 10px;
+  outline: none;
+  overflow: hidden;
+  padding-left: 6%;
+  padding-right: 6%;
+  font-family: Monospace;
+  transition: 0.6s;
+  display: flex;
+  flex-direction: column;
+  display: block;
+}
+.col-json button{
+  padding: 10px;
+  color: #ff6300;
+  border: none;
+  border-radius: 6px;
+  font-size: 17px;
+  margin-bottom: 10px;
+  background-color: transparent;
+  transition: 0.6s;
+}
+.col-json button:hover{
+  color: #fff;
+  background-color: #ff6300;
+  transition: 0.6s;
+}
+.col-json span{
+  color: #00ccff;
+  font-size: 17px;
+}
+.col-json div{
+  padding: 10px;
+  background-color: #ebeced;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+}
+@media only screen and (max-width:700px) {
+  .row{
+    margin: 50% 0;
+  }
+ nav ul {
+     width: 100%;
+     background: linear-gradient(#ff3527, #ff5ea2);
+     position: absolute;
+     top: 30px;
+     right: 0;
+     z-index: 2;
+     transition: 0.6s;
+ }
+  nav ul li{
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  nav ul li a{
+    color: #fff;
+  }
+  nav ul li a:hover{
+    color: #ff3527;
+  }
+  .menuLogo{
+    display: block;
+  }
+}

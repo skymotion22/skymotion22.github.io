@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width">
+    <link rel="shortcut icon" href="icon.png" type="image/x-icon" />
+    <script src="https://kit.fontawesome.com/fe9e46fd41.js" crossorigin="anonymous"></script>
+    <title>GETING DOWNLOAD - X0NAY3M</title>
+    <meta name="theme-color" content="#5372f0">
+    <style>
+      @import url('https://kit.fontawesome.com/fe9e46fd41.js');
+      @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=s,a am, 0 were willwap');
+      *{
+        margin: 0;
+        padding: 0;
+        font-family: Poppins;
+        box-sizing: border-box;
+      }
+      body{
+        width: 100%;
+        height: 200vh;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding-right: 3%;
+        padding-left: 3%;
+        background: #5372f0;
+        transition: 0.6s;
+        gap: 10px;
+      }
+      .containear{
+        width: 100%;
+        padding: 5px 0;
+        background: #fff;
+        border-radius: 7px;
+        display: flex;
+        flex-direction: column;
+        transition: 0.6s;
+      }
+      .txt{
+        width: 100%;
+        height: 55px;
+        border-bottom: 1px solid #bfbfbf;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        font-size: 19px;
+        color: #5372f0;
+        padding: 15px 10px;
+      }
+      .txt p{
+        text-align: center;
+      }
+      .inputBox{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 15px;
+        gap: 10px;
+      }
+       .inputBox input{
+         width: 100%;
+         height: 55px;
+         border: 1px solid #bfbfbf;
+         outline: none;
+         border-radius: 7px;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         text-align: center;
+         font-size: 18px;
+         padding: 5px;
+       }
+       .inputBox input:focus{
+         border: 1px solid #5372f0;
+       }
+       .inputButton{
+         width: 100%;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         padding: 15px 15px;
+       }
+       .inputButton button{
+         width: 100%;
+         height: 55px;
+         border: none;
+         border-radius: 7px;
+         background-color: #5372f0;
+         font-size: 18px;
+         color: #fff;
+         padding: 5px;
+         cursor: pointer;
+         transition: 0.6s;
+       }
+       .inputButton button:hover{
+         color: black;
+         background: #fff;
+         border: 1px solid #5372f0;
+         transition: 0.6s;
+       }
+       .lin{
+         width: 100%;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         padding: 15px 15px;
+       }
+       .line{
+        width: 100%;
+        height: 1px;
+        background: #ccc;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #ccc;
+       }
+       .line::before{
+         content: 'or';
+         padding: 0 15px;
+        background: #fff;
+       }
+       #txtDiv{
+         width: 100%;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         flex-direction: center;
+         display: none;
+         transition: 0.6s;
+       }
+       #txt2{
+         width: 100%;
+         height: 55px;
+         font-size: 17px;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         flex-direction: column;
+         background: #d1ecf1;
+         border: none;
+         border-radius: 7px;
+         color: #0c5460;
+         transition: 0.6s;
+       }
+       .box{
+         width: 100%;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         margin-top: 120px;
+         gap: 10px;
+       }
+       .box .coding{
+         height: 130px;
+         width: 100%;
+         border: none;
+         padding: 15px;
+         background: #fff;
+         border-radius: 7px;
+         font-size: 24px;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         flex-direction: column;
+         gap: 5px;
+       }
+       .box .coding i{
+         font-size: 50px;
+         background: linear-gradient(to right, #30CFD0 0%, #330867 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+       }
+       .box .coding span{
+         text-transform: uppercase;
+         font-size: 22px;
+         background: linear-gradient(to right, #30CFD0 0%, #330867 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+       }
+              
+       .boxText{
+         width: 100%;
+         background: #fff;
+         border: none;
+         border-radius: 7px;
+         padding: 10px;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         flex-direction: column;
+         gap: 15px;
+       }
+       .boxText2{
+         padding: 10px;
+         width: 100%;
+         font-size: 16px;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         flex-direction: column;
+         border-bottom: 1px solid #bfbfbf;
+         gap: 10px;
+       }
+       .boxText header{
+         font-size: 22px;
+       }
+       #boxText2{
+         width: 100%;
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         padding: 10px;
+       }
+       #boxText2 p{
+         position: absolute;
+         right: 10%;
+         
+       }
+       .icon1{
+         width: 100%;
+         padding: 10px;
+         display: flex;
+         justify-content: space-between;
+       }
+       .icon1 #aa{
+         text-decoration: none;
+         padding: 7px;
+         background: #5372f0;
+         border: none;
+         border-radius: 100px;
+         padding: 9px 15px;
+         color: #fff;
+         transition: 0.6s;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+       }
+       .icon1 #aa:hover{
+         background: #fff;
+         border: 1px solid #5372f0;
+         color: #000000;
+       }
+       #icon1{
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         gap: 10px;
+       }
+       #icon1 i{
+         height: 50px;
+         width: 50px;
+         font-size: 22px;
+         border: 1px solid #5372f0;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         border-radius: 50%;
+         color: #5372f0;
+         transition: 0.6s;
+       }
+       #icon1 i:hover{
+         background: #5372f0;
+         color: #fff;
+         transition: 0.6s;
+       }
+       #icon1 a{
+         text-decoration: none;
+       }
+       @media only screen and (max-width: 700px) {
+        body{
+        width: 100%;
+        height: 170vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding-right: 3%;
+        padding-left: 3%;
+        background: #5372f0;
+        transition: 0.6s;
+        gap: 10px;
+      }
+      .containear{
+        width: 100% ;
+        padding: 5px 0;
+        background: #fff;
+        border-radius: 7px;
+        display: flex;
+        flex-direction: column;
+        transition: 0.6s;
+      }
+      .txt{
+        width: 100%;
+        height: 55px;
+        border-bottom: 1px solid #bfbfbf;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        font-size: 19px;
+        color: #5372f0;
+        padding: 15px 10px;
+      }
+      .txt p{
+        text-align: center;
+      }
+      .inputBox{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 15px;
+        gap: 10px;
+      }
+       .inputBox input{
+         width: 100%;
+         height: 55px;
+         border: 1px solid #bfbfbf;
+         outline: none;
+         border-radius: 7px;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         text-align: center;
+         font-size: 18px;
+         padding: 5px;
+       }
+       .inputBox input:focus{
+         border: 1px solid #5372f0;
+       }
+       .inputButton{
+         width: 100%;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         padding: 15px 15px;
+       }
+       .inputButton button{
+         width: 100%;
+         height: 55px;
+         border: none;
+         border-radius: 7px;
+         background-color: #5372f0;
+         font-size: 18px;
+         color: #fff;
+         padding: 5px;
+         cursor: pointer;
+         transition: 0.6s;
+       }
+       .inputButton button:hover{
+         color: black;
+         background: #fff;
+         border: 1px solid #5372f0;
+         transition: 0.6s;
+       }
+       .lin{
+         width: 100%;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         padding: 15px 15px;
+       }
+       .line{
+        width: 100%;
+        height: 1px;
+        background: #ccc;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #ccc;
+       }
+       .line::before{
+         content: 'or';
+         padding: 0 15px;
+        background: #fff;
+       }
+       #txtDiv{
+         width: 100%;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         flex-direction: center;
+         display: none;
+         transition: 0.6s;
+       }
+       #txt2{
+         width: 100%;
+         height: 55px;
+         font-size: 17px;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         flex-direction: column;
+         background: #d1ecf1;
+         border: none;
+         border-radius: 7px;
+         color: #0c5460;
+         transition: 0.6s;
+       }
+       .box{
+         width: 100%;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         flex-direction: column;
+         margin-top: 120px;
+         gap: 10px;
+       }
+       .box .coding{
+         height: 130px;
+         width: 100%;
+         border: none;
+         padding: 15px;
+         background: #fff;
+         border-radius: 7px;
+         font-size: 24px;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         flex-direction: column;
+         gap: 5px;
+       }
+       .box .coding i{
+         font-size: 50px;
+         background: linear-gradient(to right, #30CFD0 0%, #330867 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+       }
+       .box .coding span{
+         text-transform: uppercase;
+         font-size: 22px;
+         background: linear-gradient(to right, #30CFD0 0%, #330867 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+       }
+       
+       .boxText{
+         width: 100%;
+         background: #fff;
+         border: none;
+         border-radius: 7px;
+         padding: 10px;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         flex-direction: column;
+         gap: 15px;
+       }
+       .boxText2{
+         padding: 10px;
+         width: 100%;
+         font-size: 16px;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         flex-direction: column;
+         border-bottom: 1px solid #bfbfbf;
+         gap: 10px;
+       }
+       .boxText header{
+         font-size: 22px;
+       }
+       #boxText2{
+         width: 100%;
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         padding: 10px;
+       }
+       #boxText2 p{
+         position: absolute;
+         right: 10%;
+         
+       }
+       .icon1{
+         width: 100%;
+         padding: 10px;
+         display: flex;
+         justify-content: space-between;
+       }
+       .icon1 #aa{
+         text-decoration: none;
+         padding: 7px;
+         background: #5372f0;
+         border: none;
+         border-radius: 100px;
+         padding: 9px 15px;
+         color: #fff;
+         transition: 0.6s;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+       }
+       .icon1 #aa:hover{
+         background: #fff;
+         border: 1px solid #5372f0;
+         color: #000000;
+       }
+       #icon1{
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         gap: 10px;
+       }
+       #icon1 i{
+         height: 50px;
+         width: 50px;
+         font-size: 22px;
+         border: 1px solid #5372f0;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         border-radius: 50%;
+         color: #5372f0;
+         transition: 0.6s;
+       }
+       #icon1 i:hover{
+         background: #5372f0;
+         color: #fff;
+         transition: 0.6s;
+       }
+       #icon1 a{
+         text-decoration: none;
+       }
+       }
+    </style>
+  </head>
+  <body>
+    <div class="containear">
+      <div class="txt">
+        <p>DOWNLOAD</p>
+      </div>
+      <div class="inputBox">
+        <div id="txtDiv">
+        <span id="txt2">Please enter valid download link.<span>
+       </div>
+        <input type="text" name="" id="input" value="" placeholder="Enter download link"/>
+      </div>
+      <div class="lin">
+      <div class="line"></div>
+      </div>
+      <div class="inputButton">
+        <button type="submit" onclick="download()">GET TO DOWNLOAD</button>
+      </div>
+    </div>
+    <div class="box">
+      <div class="coding">
+        <i class="fa-solid fa-code"></i>
+        <span>Web Design</span>
+     </div>
+      <div class="coding">
+        <i class="fa-solid fa-chart-line"></i></i>
+        <span>Advertising</span>
+     </div>
+      <div class="coding">
+        <i class="fa-solid fa-rocket"></i></i>
+        <span>Game Design</span>
+     </div>
+    </div>
+    <div class="boxText">
+      <header>Quote of the Day</header>
+      <div class="boxText2">
+        <p>Naver give up because you know if you try next time you will definitely will WIN.</p>
+        <div id="boxText2">
+          <p>-- Sabbir Ahmed</p>
+        </div>
+      </div>
+      <div class="icon1">
+        <div id="icon1">
+          <a href="https://www.facebook.com/sabbirannel2"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="https://t.me/niloy_ahmed_22"><i class="fa-brands fa-telegram"></i></a>
+          <a href="https://twitter.com/x0n4y3m/"><i class="fa-brands fa-twitter"></i></a>
+        </div>
+        <a id="aa"href="#">New Quote</a>
+      </div>
+    </div>
+    <script>
+      input = document.getElementById('input');
+      txtDiv = document.getElementById('txtDiv');
+      txt2 = document.getElementById('txt2');
+      
+      function download() {
+        if(input.value == '') {
+          txtDiv.style.display = 'block'
+          txtDiv.style.transition = '0.6s';
+        } else {
+          txtDiv.style.display = 'block';
+          txt2.innerHTML = 'Getting download starting...';
+          fetchFile(input.value);
+        }
+        function fetchFile(url) {
+          fetch(url).then(res => res.blob()).then(file => {
+            let aTag = document.createElement("a");
+            let tmpUrl = URL.createObjectURL(file);
+            aTag.href = tmpUrl;
+            aTag.download = url.replace('sabbir, monaiyem');
+            document.body.appendChild(aTag);
+            aTag.click();
+            aTag.remove();
+            URL.revokeObjectURL(tmpUrl);
+            txtDiv.style.display = 'none';
+          });
+        }
+      }
+    </script>
+  </body>
+</html>

@@ -1,16 +1,3 @@
-<?php
-if(isset($_POST['submit'])) {
-  $file = 'mail/mail.json';
-  $file2 = file_get_contents($file);
-  $json_decode = json_decode($file2, true);
-  $array[] = array(
-    'mail' => $_POST['mail']
-    );
-    $fi = file_put_contents($file, json_encode($array));
-}
-
-
-?>
 <!DOCTYPE html>
 <html>
   <head>

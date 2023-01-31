@@ -1,0 +1,808 @@
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=s,a am, 0 were willwap');
+      *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Poppins;
+      }
+      body{
+         max-width: 100%;
+         height: 100vh;
+         background: #fff;
+         padding: 0;
+         transition: 0.6s;
+        }
+         
+        
+              .containear{
+        max-width: 100%;
+        height: 100vh;
+        display: flex;
+        border-radius: 7px;
+        border: none;
+        padding-left: 3%;
+        padding-right: 3%;
+        gap: 20px;
+      padding: 15px;
+        
+      }
+      .inputButton{
+        max-width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .inputButton button{
+        margin-top: 0;
+        position: relative;
+        left: 0;
+        width: 160px;
+        padding: 10px;
+        border: none;
+        border-radius: 50px;
+        font-size: 16px;
+        background: #7B73FE;
+        color: #fff;
+        transition: 0.6s;
+       box-shadow: 0px 0 1px #000000;*/
+      }
+      .inputButton button:hover{
+        border: 1px solid #7B73FE;
+        background: #fff;
+        color: #7B73FE;
+        transition: 0.6s;
+      }
+      .animationText{
+        width: 100%;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+        gap: 10px;
+        font-size: 30px;
+        overflow: hidden;
+        margin-top: 0;
+      }
+      .animationText span{
+        font-size: 23px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 33px;
+      }
+      .animationText li{
+        width: 0ch;
+        color: red;
+        font-size: 23px;
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+        animation: typing 4s steps(12) infinite alternate;
+        border-right: 2px solid red;
+        height: 33px;
+      }
+      .animationText #color {
+        color: #7B73FE;
+      }
+      @keyframes typing{
+        0%{
+          width: 0ch;
+        }
+        50%{
+          width: 8ch;
+        }
+      }
+      #container{
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+      .images{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 0;
+      }
+      .images img {
+        width: 60%;
+     
+      }
+      .imag1{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+      .imag1 img{
+        width: 100%;
+        height: 144%;
+      }
+      #lecture1{
+        width: 100%;
+        height: 215px;
+        padding: 10px;
+        border: 1px solid #7B73FE;
+        border-radius: 7px;
+        gap: 5px;
+      }
+      #txt1{
+        width: 100%;
+        margin: 5px 0;
+        font-size: 15px;
+        border-bottom: 1px solid #ccc;
+        height: 135px;
+        gap: 10px;
+      } 
+      #txt1 p{
+        margin-top: 10px;
+      }
+      #lecture1 #name{
+        position: absolute;
+        right: 11%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+             }
+      #txt3{
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }    
+             
+             
+             
+      #select1{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        gap: 5px;
+      }
+      #select1 i{
+        width: 40px;
+        height: 40px;
+        border: 1px solid #7B73FE;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        transition: 0.6s;
+      }
+      #select1 a{
+        text-decoration: none;
+        color: #7B73FE;
+        font-size: 20px;
+      }
+      #select1 i:hover{
+        background: #7B73FE;
+        color: #fff;
+        transition: 0.6s;
+      }
+      #logo2{
+        width: 100%;
+        display: flex;
+        gap: 5px;
+      }
+      #select2 button{
+       width: 100px;
+        padding: 10px;
+        background: #7B73FE;
+        border: none;
+        border-radius: 50px;
+        color: #fff;
+        transition: 0.6s;
+      }
+      #select2 button:hover{
+        border: 1px solid #7B73FE;
+        background: #fff;
+        color: #7B73FE;
+        transition: 0.6s;
+      }
+      #images2{
+        width: 100%;
+      }
+      #images2 img{
+        width: 100%;
+      }
+               #list{
+        position: fixed;
+        width: 50px;
+        height: 200px;
+        border: 1px solid #7B73FE;
+        border-radius: 50px;
+        box-shadow: 3px 3px 3px rgba(0.0.0,0.1);
+        gap: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 50%;
+        left: 5%;
+      }
+      #list i{
+        width: 100%;
+        font-size: 25px;
+        color: #7B73FE;
+      }
+    #imagess1{
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border: 1px solid #7B73FE;
+      padding: 10px;
+      background: #7B73FE;
+      border-radius: 7px;
+      gap: 10px;
+    }
+    #imagess1 i{
+      width: 50px;
+      height: 50px;
+      border: 1px solid #7B73FE;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 30px;
+      color: #fff;
+    }
+    #txtt1{
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      color: #fff;
+      gap: 7px;
+    }
+    #txtttt{
+      font-size: 18px;
+    }
+    #silent{
+      width: 100%;
+    }
+    #silent img{
+      width: 100%;
+    }
+    #lecture2{
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #7B73FE;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      border-radius: 7px;
+      box-shadow: 2px 2px 5px #d0d0d0,
+      -2px -2px 5px #d0d0d0;
+      gap: 10px;
+    }
+    #lecture2 #txtTop{
+      width: 100%;
+      font-size: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      border-bottom: 1px solid #ccc;
+      padding: 5px;
+    }
+    #lecture2 #ob{
+      border-bottom: 1px solid #ccc;
+      display: flex;
+      padding: 5px;
+      font-size: 16px;
+    }
+    #lecture2 #obb{
+      font-size: 18px;
+    }
+    #sendEmail{
+      width: 100%;
+      padding: 10px;
+      box-shadow: 2px 2px 5px #d0d0d0;
+      border-radius: 7px;
+    }
+    #sendEmail #inputBox{
+      width: 100%;
+      border: 1px solid #7B73FE;
+      display: flex;
+      padding: 2px;
+      justify-content: center;
+      align-items: center;
+    }
+    #sendEmail #inputBox input{
+      width: 100%;
+      outline: none;
+      border: none;
+      padding: 10px;
+      font-size: 17px;
+    }
+    #sendEmail #inputBox button{
+      width: 80px;
+      height: 30px;
+      background: #7B73FE;
+      color: #fff;
+      outline: none;
+      border: none;
+      border-radius: 50px;
+      transition: 0.6s;
+    }
+    #sendEmail #inputBox button:hover{
+      background: #fff;
+      color: #7B73FE;
+      border: 1px solid #7B73FE;
+      transition: 0.6s;
+    }
+    #down{
+      width: 100%;
+      height: 200px;
+      background: #7B73FE;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+     flex-direction: column;
+     padding: 10px;
+     color: #fff;
+     box-shadow: 3px 3px 5px #c2c4c5,
+     -2px -2px 5px #c2c4c5;
+     margin-top: 1400px;
+    }
+    #down #name {
+      width: 100%;
+     font-size: 20px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     border-bottom: 1px solid #fff;
+    }
+    #down #name #color{
+      color: red;
+      font-size: 20px;
+    }
+    #down #name #color2 {
+      color: #00ff9a;
+    }
+    #lastText {
+      width: 100%;
+      height: 110px;
+      border-bottom: 1px solid #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 5px;
+    }
+    .cor{
+      border-right: 1px solid #fff;
+    }
+    #colorr1{
+      color: #9d00ff;
+    }
+    #colorr2{
+      color: #00ff9a;
+    }
+    #colorr3{
+      color: #0ad1f7;
+    }
+    #colorr4{
+      color: #446b48;
+    }
+    #copy{
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;flex-direction: column;
+    }
+    #copyRight{
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      margin-top: 10px;
+    }
+      @media only screen and (max-width: 700px){
+        
+        
+              .containear{
+        max-width: 100%;
+        height: 300vh;
+        display: flex;
+        flex-direction: column;
+        border-radius: 7px;
+        border: none;
+        padding-left: 3%;
+        padding-right: 3%;
+        gap: 20px;
+      padding: 15px;
+        
+      }
+      .inputButton{
+        max-width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .inputButton button{
+        margin-top: 0;
+        position: relative;
+        left: 0;
+        width: 160px;
+        padding: 10px;
+        border: none;
+        border-radius: 50px;
+        font-size: 16px;
+        background: #7B73FE;
+        color: #fff;
+        transition: 0.6s;
+       box-shadow: 0px 0 1px #000000;*/
+      }
+      .inputButton button:hover{
+        border: 1px solid #7B73FE;
+        background: #fff;
+        color: #7B73FE;
+        transition: 0.6s;
+      }
+      .animationText{
+        width: 100%;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+        gap: 10px;
+        font-size: 30px;
+        overflow: hidden;
+        margin-top: 0;
+      }
+      .animationText span{
+        font-size: 23px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 33px;
+      }
+      .animationText li{
+        width: 0ch;
+        color: red;
+        font-size: 23px;
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+        animation: typing 4s steps(12) infinite alternate;
+        border-right: 2px solid red;
+        height: 33px;
+      }
+      .animationText #color {
+        color: #7B73FE;
+      }
+      @keyframes typing{
+        0%{
+          width: 0ch;
+        }
+        50%{
+          width: 8ch;
+        }
+      }
+      #container{
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+      .images{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 0;
+      }
+      .images img {
+        width: 60%;
+     
+      }
+      .imag1{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+      .imag1 img{
+        width: 100%;
+        height: 144%;
+      }
+      #lecture1{
+        width: 100%;
+        height: 215px;
+        padding: 10px;
+        border: 1px solid #7B73FE;
+        border-radius: 7px;
+        gap: 5px;
+      }
+      #txt1{
+        width: 100%;
+        margin: 5px 0;
+        font-size: 15px;
+        border-bottom: 1px solid #ccc;
+        height: 135px;
+        gap: 10px;
+      } 
+      #txt1 p{
+        margin-top: 10px;
+      }
+      #lecture1 #name{
+        position: absolute;
+        right: 11%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+             }
+      #txt3{
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }    
+             
+             
+             
+      #select1{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        gap: 5px;
+      }
+      #select1 i{
+        width: 40px;
+        height: 40px;
+        border: 1px solid #7B73FE;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        transition: 0.6s;
+      }
+      #select1 a{
+        text-decoration: none;
+        color: #7B73FE;
+        font-size: 20px;
+      }
+      #select1 i:hover{
+        background: #7B73FE;
+        color: #fff;
+        transition: 0.6s;
+      }
+      #logo2{
+        width: 100%;
+        display: flex;
+        gap: 5px;
+      }
+      #select2 button{
+       width: 100px;
+        padding: 10px;
+        background: #7B73FE;
+        border: none;
+        border-radius: 50px;
+        color: #fff;
+        transition: 0.6s;
+      }
+      #select2 button:hover{
+        border: 1px solid #7B73FE;
+        background: #fff;
+        color: #7B73FE;
+        transition: 0.6s;
+      }
+      #images2{
+        width: 100%;
+      }
+      #images2 img{
+        width: 100%;
+      }
+               #list{
+        position: fixed;
+        width: 50px;
+        height: 200px;
+        border: 1px solid #7B73FE;
+        border-radius: 50px;
+        box-shadow: 3px 3px 3px rgba(0.0.0,0.1);
+        gap: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 50%;
+        left: 5%;
+      }
+      #list i{
+        width: 100%;
+        font-size: 25px;
+        color: #7B73FE;
+      }
+    #imagess1{
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border: 1px solid #7B73FE;
+      padding: 10px;
+      background: #7B73FE;
+      border-radius: 7px;
+      gap: 10px;
+    }
+    #imagess1 i{
+      width: 50px;
+      height: 50px;
+      border: 1px solid #7B73FE;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 30px;
+      color: #fff;
+    }
+    #txtt1{
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      color: #fff;
+      gap: 7px;
+    }
+    #txtttt{
+      font-size: 18px;
+    }
+    #silent{
+      width: 100%;
+    }
+    #silent img{
+      width: 100%;
+    }
+    #lecture2{
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #7B73FE;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      border-radius: 7px;
+      box-shadow: 2px 2px 5px #d0d0d0,
+      -2px -2px 5px #d0d0d0;
+      gap: 10px;
+    }
+    #lecture2 #txtTop{
+      width: 100%;
+      font-size: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      border-bottom: 1px solid #ccc;
+      padding: 5px;
+    }
+    #lecture2 #ob{
+      border-bottom: 1px solid #ccc;
+      display: flex;
+      padding: 5px;
+      font-size: 16px;
+    }
+    #lecture2 #obb{
+      font-size: 18px;
+    }
+    #sendEmail{
+      width: 100%;
+      padding: 10px;
+      box-shadow: 2px 2px 5px #d0d0d0;
+      border-radius: 7px;
+    }
+    #sendEmail #inputBox{
+      width: 100%;
+      border: 1px solid #7B73FE;
+      display: flex;
+      padding: 2px;
+      justify-content: center;
+      align-items: center;
+    }
+    #sendEmail #inputBox input{
+      width: 100%;
+      outline: none;
+      border: none;
+      padding: 10px;
+      font-size: 17px;
+    }
+    #sendEmail #inputBox button{
+      width: 80px;
+      height: 30px;
+      background: #7B73FE;
+      color: #fff;
+      outline: none;
+      border: none;
+      border-radius: 50px;
+      transition: 0.6s;
+    }
+    #sendEmail #inputBox button:hover{
+      background: #fff;
+      color: #7B73FE;
+      border: 1px solid #7B73FE;
+      transition: 0.6s;
+    }
+    #down{
+      width: 100%;
+      height: 200px;
+      background: #7B73FE;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+     flex-direction: column;
+     padding: 10px;
+     color: #fff;
+     box-shadow: 3px 3px 5px #c2c4c5,
+     -2px -2px 5px #c2c4c5;
+     margin-top: 0;
+    }
+    #down #name {
+      width: 100%;
+     font-size: 20px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     border-bottom: 1px solid #fff;
+    }
+    #down #name #color{
+      color: red;
+      font-size: 20px;
+    }
+    #down #name #color2 {
+      color: #00ff9a;
+    }
+    #lastText {
+      width: 100%;
+      height: 110px;
+      border-bottom: 1px solid #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 5px;
+    }
+    .cor{
+      border-right: 1px solid #fff;
+    }
+    #colorr1{
+      color: #9d00ff;
+    }
+    #colorr2{
+      color: #00ff9a;
+    }
+    #colorr3{
+      color: #0ad1f7;
+    }
+    #colorr4{
+      color: #446b48;
+    }
+    #copy{
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;flex-direction: column;
+    }
+    #copyRight{
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      margin-top: 10px;
+    }
+    /* This loading service  *
+    
+    
+      } //*this*//

@@ -61,7 +61,14 @@ class bdCaptchaClass {
   }
 
   isCaptchaSolved() {
-    return localStorage.getItem('captcha') === 'solved';
+    const solved = localStorage.getItem('captcha') === 'solved';
+    const time = parseInt(localStorage.getItem('captcha_time') || '0', 10);
+    if (!solved || Date.now() - time > 5 * 60 * 1000) {
+      localStorage.removeItem('captcha');
+      localStorage.removeItem('captcha_time');
+      return false;
+    }
+    return true;
   }
 
   getCaptchaToken(validitySeconds = 300) {
@@ -77,15 +84,14 @@ class bdCaptchaClass {
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@400;700&display=swap');
 #captcha {
   width: 100%;
-  max-width: 600px;
+  max-width: 300px;
   background: #fff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   padding: 10px;
-  border-radius: 8px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border: 2px solid #006a4e;
+  border: 1px solid #006a4e;
   box-sizing: border-box;
   font-family: 'Noto Sans Bengali', 'Poppins', sans-serif;
 }
@@ -225,7 +231,6 @@ class bdCaptchaClass {
 .tt {
   font-weight: bold;
   font-size: 14px;
-  color: ;
 }
 </style>
 <div class="main_c">
@@ -266,8 +271,10 @@ class bdCaptchaClass {
     this.overlay.addEventListener('click', () => this._hideCaptchaDialog());
     if (this.isCaptchaSolved()) {
       this.checkBox.classList.add('checked');
+      this.txt.innerText = "I'm from Bangladesh";
+    } else {
+      this.checkBox.classList.remove('checked');
     }
-    this.checkBox.classList.remove('checked');
   }
 
   _onCheckboxChange() {
@@ -276,8 +283,7 @@ class bdCaptchaClass {
     this.txt.innerText ='Verifying...';
     this.checkBox.style.display = 'none';
     setTimeout(() => {
-      const cached = localStorage.getItem('captcha');
-      if (cached === 'solved') {
+      if (this.isCaptchaSolved()) {
         this.spinner.style.display = 'none';
         this.checkBox.style.display = 'flex';
         this.checkBox.classList.add('checked');
@@ -331,11 +337,14 @@ class bdCaptchaClass {
     });
     if (selectedImgs.length !== this.correctImages.length) allCorrect = false;
     if (allCorrect) {
+      const now = Date.now();
       localStorage.setItem('captcha', 'solved');
+      localStorage.setItem('captcha_time', now.toString());
       this._hideCaptchaDialog();
       this.spinner.style.display = 'none';
       this.checkBox.style.display = 'flex';
       this.checkBox.classList.add('checked');
+      this.txt.innerText = "I'm from Bangladesh";
       alert("Captcha solved successfully!");
     } else {
       alert("Incorrect selection, please try again.");

@@ -63,7 +63,7 @@ class bdCaptchaClass {
   isCaptchaSolved() {
     const solved = localStorage.getItem('captcha') === 'solved';
     const time = parseInt(localStorage.getItem('captcha_time') || '0', 10);
-    if (!solved || Date.now() - time > 5 * 60 * 1000) {
+    if (!solved || Date.now() - time > 60 * 60 * 1000) {
       localStorage.removeItem('captcha');
       localStorage.removeItem('captcha_time');
       return false;
